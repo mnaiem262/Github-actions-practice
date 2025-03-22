@@ -52,6 +52,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo "This is a test ${{ github.event_name }} event"
+          echo "This is a test ${{ github.job }} event"
 
   deploy:
     runs-on: ubuntu-latest
@@ -63,5 +65,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project
+          echo "This is a test ${{ github.event_name }} event"
+          echo "This is a test ${{ github.job }} event"
 
     
